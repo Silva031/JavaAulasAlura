@@ -25,7 +25,6 @@ public class Principal {
             Serie serie = new Serie();
             serie.setNome("Dark");
             serie.setAnoDeLancamento(1990);
-            serie.setDuracaoEmMinutos(180);
             serie.exibeFichaTecnica();
         }
     }
