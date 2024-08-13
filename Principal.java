@@ -24,7 +24,7 @@ public class Principal {
 
             Serie serie = new Serie();
             serie.setNome("Dark");
-            serie.setAnoDeLancamento(1990);
+            serie.setAnoDeLancamento(2018);
             serie.exibeFichaTecnica();
         }
     }
