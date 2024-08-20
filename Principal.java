@@ -1,5 +1,6 @@
 package aulasAlura;
 
+import aulasAlura.br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import aulasAlura.br.com.alura.screenmatch.modelos.Filme;
 import aulasAlura.br.com.alura.screenmatch.modelos.Serie;
 
@@ -18,14 +19,27 @@ public class Principal {
             meuFilme.avalia(10);
             System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
             System.out.println(meuFilme.pegaMedia());
-            //meuFilme.somaDasAvaliacoes = 10;
-            //meuFilme.totalDeAvaliacoes = 1;
-            //System.out.println(meuFilme.pegaMedia());
+            /*
+            meuFilme.somaDasAvaliacoes = 10;
+            meuFilme.totalDeAvaliacoes = 1;
+            System.out.println(meuFilme.pegaMedia());
+            */
 
-            Serie serie = new Serie();
-            serie.setNome("Dark");
-            serie.setAnoDeLancamento(2010);
-            serie.exibeFichaTecnica();
+            Serie Dark = new Serie();
+            Dark.setNome("Dark");
+            Dark.setAnoDeLancamento(2018);
+            Dark.setTemporadas(3);
+            Dark.setEpisodiosPorTemporadas(10);
+            Dark.setMinutosPorEpisodio(50);
+            Dark.exibeFichaTecnica();
+            System.out.println("Duracao para maratonar Dark: " + Dark.getDuracaoEmMinutos());
+
+            CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+            calculadora.inclui(meuFilme);
+            calculadora.inclui(Dark);
+
+            System.out.println(calculadora.getTempoTotal());
+
         }
     }
 
