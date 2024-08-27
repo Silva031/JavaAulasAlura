@@ -1,6 +1,8 @@
 package aulasAlura;
 
 import aulasAlura.br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
+import aulasAlura.br.com.alura.screenmatch.calculo.FiltroRecomendacao;
+import aulasAlura.br.com.alura.screenmatch.modelos.Episodio;
 import aulasAlura.br.com.alura.screenmatch.modelos.Filme;
 import aulasAlura.br.com.alura.screenmatch.modelos.Serie;
 
@@ -39,6 +41,15 @@ public class Principal {
             calculadora.inclui(Dark);
 
             System.out.println(calculadora.getTempoTotal());
+
+            FiltroRecomendacao filtro = new FiltroRecomendacao();
+            filtro.filtra(meuFilme);
+
+            Episodio episodio = new Episodio();
+            episodio.setNumero(1);
+            episodio.setSerie(Dark);
+            episodio.setTotalVizualizacoes(300);
+            filtro.filtra(episodio);
 
         }
     }
