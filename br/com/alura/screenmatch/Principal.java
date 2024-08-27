@@ -1,4 +1,4 @@
-package aulasAlura;
+package aulasAlura.br.com.alura.screenmatch;
 
 import aulasAlura.br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
 import aulasAlura.br.com.alura.screenmatch.calculo.FiltroRecomendacao;
