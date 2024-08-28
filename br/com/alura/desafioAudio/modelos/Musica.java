@@ -1,7 +1,5 @@
 package aulasAlura.br.com.alura.desafioAudio.modelos;
 
-import aulasAlura.br.com.alura.desafioAudio.principal.Audio;
-
 public class Musica extends Audio {
     private String album;
     private String artista;
@@ -29,5 +27,14 @@ public class Musica extends Audio {
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    @Override
+    public double getClassificacoes() {
+        if (this.getTotalDeReproducoes() > 2000) {
+            return 10;
+        } else {
+            return 7;
+        }
     }
 }

@@ -1,8 +1,10 @@
 package aulasAlura.br.com.alura.desafioAudio.modelos;
 
-public class Podcast {
+import javax.print.attribute.standard.Media;
+
+public class Podcast extends Audio {
     private String autor;
-    private String descricao;
+    private String titulo;
 
     public String getAutor() {
         return autor;
@@ -12,11 +14,20 @@ public class Podcast {
         this.autor = autor;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    @Override
+    public double getClassificacoes() {
+        if (getCurtidas() > 500) {
+            return 10;
+        } else {
+            return 8;
+        }
     }
 }

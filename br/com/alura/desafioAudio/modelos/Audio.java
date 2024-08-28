@@ -1,4 +1,4 @@
-package aulasAlura.br.com.alura.desafioAudio.principal;
+package aulasAlura.br.com.alura.desafioAudio.modelos;
 
 public class Audio {
     private String titulo;
