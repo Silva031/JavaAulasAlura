@@ -48,4 +48,9 @@ public class Episodio implements Classificavel {
             return 2;
         }
     }
+
+    @Override
+    public void setTotalVisualizacoes(int i) {
+
+    }
 }
